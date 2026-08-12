@@ -1,0 +1,19 @@
+[project]
+name = "aiengineeringcohort"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "4kasa786", email = "alkabhoyar01@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "ipykernel>=6.29.5",
+]
+
+[project.scripts]
+aiengineeringcohort = "aiengineeringcohort:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
