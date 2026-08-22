@@ -212,8 +212,13 @@ class CotAssistant:
 
 assistant = CotAssistant()
 
-Question = ("Soniya is having 100 dollars in her bank account.She buys a book for 10 dollars and a coffee for 5 dollars. How much money does she have left?")
+while True:
+    user_query = input("Enter the question")
+    if user_query.lower() in ["exit","quit","bye"]:
+        break
+    answer = assistant.run(user_query)
+    print(f"Answer:{answer}")
+    
 
-answer = assistant.run(Question)
 
 
