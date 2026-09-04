@@ -1,3 +1,4 @@
 ipykernel
 python-dotenv
 openai
+streamlit>=1.40.1
